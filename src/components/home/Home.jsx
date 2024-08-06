@@ -1,5 +1,6 @@
 import "./home.scss";
 import { motion } from "framer-motion";
+import { rahul1 } from "/rahul1.png";
 
 const textVariants = {
   initial: {
@@ -75,7 +76,7 @@ const Home = () => {
         Full Stack Developer AI ML Enthusiast
       </motion.div>
       <div className="imageContainer">
-        <img src="/rahul1.png" alt="" />
+        <img src={rahul1} />
       </div>
     </div>
   );
