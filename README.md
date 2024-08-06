@@ -9,11 +9,10 @@ Welcome to the repository for my personal portfolio website! This site showcases
 - [Tech Stack](#tech-stack)
 - [Installation](#installation)
 - [Usage](#usage)
-- [Contact](#contact)
 
 ## Demo
 
-Check out the live demo [here](https://rahul-ramesh-chandra.github.io/MyPortfolio/).
+Check out the live demo [here](https://rahul-ramesh-chandra.github.io/Portfoliio/).
 
 ## Features
 
