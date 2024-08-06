@@ -1,11 +1,11 @@
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
-import { motion } from "framer-motion";
-import { github } from "/github.png";
-import { linkedin } from "/linkedin.png";
-import { leetcode } from "/leetcode.png";
-import { facebook } from "/facebook.png";
-import { youtube } from "/youtube.png";
+import motion from "framer-motion";
+import github from "/github.png";
+import linkedin from "/linkedin.png";
+import leetcode from "/leetcode.png";
+import facebook from "/facebook.png";
+import youtube from "/youtube.png";
 
 
 

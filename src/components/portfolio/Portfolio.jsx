@@ -1,10 +1,10 @@
 import { useRef } from "react";
 import "./portfolio.scss";
 import { motion, useScroll, useSpring, useTransform } from "framer-motion";
-import { teamup } from "/teamup.jpg";
-import { chatroom } from "/chatroom.jpeg";
-import { bug } from "/bug.jpeg";
-import { dog } from "/dog.jpeg";
+import teamup from "/teamup.jpg";
+import chatroom from "/chatroom.jpeg";
+import bug from "/bug.jpeg";
+import dog from "/dog.jpeg";
 
 
 const items = [

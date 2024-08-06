@@ -1,6 +1,6 @@
 import "./home.scss";
 import { motion } from "framer-motion";
-import { rahul1 } from "/rahul1.png";
+import rahul1 from "/rahul1.png";
 
 const textVariants = {
   initial: {
