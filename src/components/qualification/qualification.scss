@@ -1,0 +1,183 @@
+@import "../../app.scss";
+
+.qualification {
+  background: linear-gradient(180deg, #0c0c1d, #111132);
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  .textContainer {
+    flex: 1;
+    align-self: flex-end;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    // Mobile Styles
+    @media (max-width: 768px) {
+      align-self: center;
+      text-align: center;
+      flex-direction: column;
+    }
+
+    p {
+      font-weight: 200;
+      font-size: 20px;
+      color: gray;
+      text-align: right;
+    }
+
+    hr {
+      width: 500px;
+      border: none;
+      border-top: 0.5px solid gray;
+
+      @media (max-width: 768px) {
+        width: 300px;
+      }
+    }
+  }
+
+  .titleContainer {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    .title {
+      display: flex;
+      align-items: center;
+      gap: 50px;
+
+      @media (max-width: 768px) {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+      }
+
+      img {
+        width: 300px;
+        height: 100px;
+        border-radius: 50px;
+        object-fit: cover;
+
+        @media (max-width: 768px) {
+          width: 200px;
+          height: 50px;
+        }
+      }
+
+      h1 {
+        font-size: 96px;
+        font-weight: 100;
+
+        @media (max-width: 768px) {
+          font-size: 36px;
+        }
+      }
+    }
+  }
+
+  .listContainer {
+    flex: 2;
+    display: flex;
+    max-width: 1300px;
+    margin: auto;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .box {
+      padding: 50px;
+      border: 0.5px solid gray;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+
+      @media (max-width: 768px) {
+        border: none;
+        align-items: center;
+        gap: 20px;
+        padding: 10px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+      }
+
+      p {
+        @media (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      .content {
+        // Ensure content takes up space
+        flex: 1;
+        overflow: auto;
+      }
+    }
+  }
+}
+
+// Mobile specific styles
+@media (max-width: 768px) {
+  .box.expanded {
+    border: 1px solid black;
+  }
+
+  .content {
+    display: none;
+    transition: all 0.3s ease;
+    border: 2px solid #111132;
+    border-radius: 5%;
+    padding: 10px;
+  }
+
+  motion.div > h2 {
+    text-decoration: underline;
+    text-decoration-color: gray; /* Default underline color */
+    text-decoration-thickness: 2px; /* Optional: Adjust thickness if needed */
+    transition: text-decoration-color 0.3s ease; /* Smooth transition */
+  }
+  
+  h2.active {
+    text-decoration-color: orange; /* Color when active */
+  }
+  
+  
+
+  .box.expanded .content {
+    display: block;
+  }
+}
+
+// Desktop styles
+@media (min-width: 769px) {
+  .box {
+    // Ensure box handles its content properly
+    height: auto;
+  }
+}
+
+ul {
+  list-style-type: disc; // or circle, square depending on your preference
+  padding-left: 20px; // Adjust if needed
+}
+
+li {
+  margin-bottom: 10px; // Adjust spacing between list items
+}
+
+motion.div > h2 {
+    text-decoration: underline;
+
+    @media (max-width: 768px) {
+      text-decoration: underline;
+    }
+  }
