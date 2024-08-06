@@ -1,6 +1,8 @@
 import "./home.scss";
 import { motion } from "framer-motion";
 import rahul1 from "/rahul1.png";
+import scroll from "/scroll.png";
+
 
 const textVariants = {
   initial: {
@@ -62,7 +64,7 @@ const Home = () => {
           <motion.img
             variants={textVariants}
             animate="scrollButton"
-            src="/scroll.png"
+            src={ scroll }
             alt="Scroll Down"
           />
         </motion.div>

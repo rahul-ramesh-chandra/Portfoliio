@@ -1,6 +1,6 @@
 import Sidebar from "../sidebar/Sidebar";
 import "./navbar.scss";
-import motion from "framer-motion";
+import { motion } from "framer-motion";
 import github from "/github.png";
 import linkedin from "/linkedin.png";
 import leetcode from "/leetcode.png";
